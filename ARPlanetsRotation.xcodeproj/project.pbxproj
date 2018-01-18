@@ -12,6 +12,17 @@
 		E502F713200C9385008D6449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E502F711200C9385008D6449 /* Main.storyboard */; };
 		E502F715200C9385008D6449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E502F714200C9385008D6449 /* Assets.xcassets */; };
 		E502F718200C9385008D6449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E502F716200C9385008D6449 /* LaunchScreen.storyboard */; };
+		E5EACF1420106AFB009557AA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EACF1320106AFB009557AA /* DetailsViewController.swift */; };
+		E5EACF162010B5BB009557AA /* mercuryImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5EACF152010B5B9009557AA /* mercuryImage.jpg */; };
+		E5EACF1E2010C023009557AA /* earthImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5EACF172010C01F009557AA /* earthImage.jpg */; };
+		E5EACF1F2010C023009557AA /* uranusImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E5EACF182010C020009557AA /* uranusImage.jpeg */; };
+		E5EACF202010C023009557AA /* jupiterImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E5EACF192010C020009557AA /* jupiterImage.jpeg */; };
+		E5EACF212010C023009557AA /* marsImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E5EACF1A2010C021009557AA /* marsImage.jpeg */; };
+		E5EACF232010C023009557AA /* neptuneImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E5EACF1C2010C022009557AA /* neptuneImage.jpeg */; };
+		E5EACF242010C023009557AA /* venusImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E5EACF1D2010C023009557AA /* venusImage.jpeg */; };
+		E5EACF282010C474009557AA /* saturnImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5EACF252010C470009557AA /* saturnImage.jpg */; };
+		E5EACF292010C474009557AA /* sunImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5EACF262010C474009557AA /* sunImage.jpg */; };
+		E5EACF2A2010C474009557AA /* moon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5EACF272010C474009557AA /* moon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		E502F714200C9385008D6449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E502F717200C9385008D6449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E502F719200C9385008D6449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5EACF1320106AFB009557AA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E5EACF152010B5B9009557AA /* mercuryImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mercuryImage.jpg; sourceTree = "<group>"; };
+		E5EACF172010C01F009557AA /* earthImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earthImage.jpg; sourceTree = "<group>"; };
+		E5EACF182010C020009557AA /* uranusImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uranusImage.jpeg; sourceTree = "<group>"; };
+		E5EACF192010C020009557AA /* jupiterImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jupiterImage.jpeg; sourceTree = "<group>"; };
+		E5EACF1A2010C021009557AA /* marsImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marsImage.jpeg; sourceTree = "<group>"; };
+		E5EACF1C2010C022009557AA /* neptuneImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neptuneImage.jpeg; sourceTree = "<group>"; };
+		E5EACF1D2010C023009557AA /* venusImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venusImage.jpeg; sourceTree = "<group>"; };
+		E5EACF252010C470009557AA /* saturnImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saturnImage.jpg; sourceTree = "<group>"; };
+		E5EACF262010C474009557AA /* sunImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunImage.jpg; sourceTree = "<group>"; };
+		E5EACF272010C474009557AA /* moon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moon.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +78,18 @@
 			children = (
 				E502F70D200C9385008D6449 /* AppDelegate.swift */,
 				E502F70F200C9385008D6449 /* ViewController.swift */,
+				E5EACF1320106AFB009557AA /* DetailsViewController.swift */,
 				E502F711200C9385008D6449 /* Main.storyboard */,
+				E5EACF152010B5B9009557AA /* mercuryImage.jpg */,
+				E5EACF172010C01F009557AA /* earthImage.jpg */,
+				E5EACF192010C020009557AA /* jupiterImage.jpeg */,
+				E5EACF1A2010C021009557AA /* marsImage.jpeg */,
+				E5EACF1C2010C022009557AA /* neptuneImage.jpeg */,
+				E5EACF182010C020009557AA /* uranusImage.jpeg */,
+				E5EACF272010C474009557AA /* moon.jpg */,
+				E5EACF252010C470009557AA /* saturnImage.jpg */,
+				E5EACF262010C474009557AA /* sunImage.jpg */,
+				E5EACF1D2010C023009557AA /* venusImage.jpeg */,
 				E502F714200C9385008D6449 /* Assets.xcassets */,
 				E502F716200C9385008D6449 /* LaunchScreen.storyboard */,
 				E502F719200C9385008D6449 /* Info.plist */,
@@ -123,9 +156,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5EACF212010C023009557AA /* marsImage.jpeg in Resources */,
 				E502F718200C9385008D6449 /* LaunchScreen.storyboard in Resources */,
+				E5EACF162010B5BB009557AA /* mercuryImage.jpg in Resources */,
+				E5EACF242010C023009557AA /* venusImage.jpeg in Resources */,
+				E5EACF1E2010C023009557AA /* earthImage.jpg in Resources */,
+				E5EACF1F2010C023009557AA /* uranusImage.jpeg in Resources */,
 				E502F715200C9385008D6449 /* Assets.xcassets in Resources */,
+				E5EACF282010C474009557AA /* saturnImage.jpg in Resources */,
+				E5EACF292010C474009557AA /* sunImage.jpg in Resources */,
+				E5EACF232010C023009557AA /* neptuneImage.jpeg in Resources */,
 				E502F713200C9385008D6449 /* Main.storyboard in Resources */,
+				E5EACF2A2010C474009557AA /* moon.jpg in Resources */,
+				E5EACF202010C023009557AA /* jupiterImage.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +181,7 @@
 			files = (
 				E502F710200C9385008D6449 /* ViewController.swift in Sources */,
 				E502F70E200C9385008D6449 /* AppDelegate.swift in Sources */,
+				E5EACF1420106AFB009557AA /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4G2KHJ47KE;
 				INFOPLIST_FILE = ARPlanetsRotation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.ARPlanetsRotation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4G2KHJ47KE;
 				INFOPLIST_FILE = ARPlanetsRotation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.ARPlanetsRotation;
 				PRODUCT_NAME = "$(TARGET_NAME)";

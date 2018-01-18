@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARPlanetsRotation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAG-f0-Q0c">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -33,11 +33,74 @@
                     </view>
                     <connections>
                         <outlet property="sceneView" destination="UAG-f0-Q0c" id="1Rk-qP-WjF"/>
+                        <segue destination="bTZ-PC-aOQ" kind="popoverPresentation" identifier="segueToShow" popoverAnchorView="UAG-f0-Q0c" id="rFP-Gi-r09">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="118.29085457271366"/>
+            <point key="canvasLocation" x="314" y="111"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="lRY-fP-Yrj">
+            <objects>
+                <viewController id="bTZ-PC-aOQ" customClass="DetailsViewController" customModule="ARPlanetsRotation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Pn-Do-1VE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FO-w9-fdb">
+                                <rect key="frame" x="0.0" y="0.0" width="63" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="vFH-w1-n0g"/>
+                                    <constraint firstAttribute="height" constant="56" id="xyl-ZI-RKI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="x">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ue7-XJ-9b9" kind="unwind" identifier="unwind" unwindAction="unwindToVCWithSegue:" id="YW9-JP-wXK"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="r3k-kt-bae">
+                                <rect key="frame" x="24" y="267" width="366" height="408"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dZ9-og-rb5">
+                                <rect key="frame" x="127" y="79" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="SP4-v2-4CY"/>
+                                    <constraint firstAttribute="height" constant="160" id="T4K-Ff-1r8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2FO-w9-fdb" firstAttribute="top" secondItem="0Pn-Do-1VE" secondAttribute="top" id="Cdz-5P-ftU"/>
+                            <constraint firstItem="r3k-kt-bae" firstAttribute="top" secondItem="dZ9-og-rb5" secondAttribute="bottom" constant="28" id="J9V-c9-E4g"/>
+                            <constraint firstItem="r3k-kt-bae" firstAttribute="leading" secondItem="0Vs-2f-qJG" secondAttribute="leading" constant="24" id="PBi-80-syq"/>
+                            <constraint firstItem="dZ9-og-rb5" firstAttribute="centerX" secondItem="0Pn-Do-1VE" secondAttribute="centerX" id="ekc-ha-LAl"/>
+                            <constraint firstItem="0Vs-2f-qJG" firstAttribute="bottom" secondItem="r3k-kt-bae" secondAttribute="bottom" constant="61" id="fyj-Dr-o38"/>
+                            <constraint firstItem="2FO-w9-fdb" firstAttribute="leading" secondItem="0Vs-2f-qJG" secondAttribute="leading" id="gJ7-xI-uZv"/>
+                            <constraint firstItem="dZ9-og-rb5" firstAttribute="top" secondItem="0Vs-2f-qJG" secondAttribute="top" constant="59" id="y01-8J-TvK"/>
+                            <constraint firstItem="0Vs-2f-qJG" firstAttribute="trailing" secondItem="r3k-kt-bae" secondAttribute="trailing" constant="24" id="zf2-YF-I1a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Vs-2f-qJG"/>
+                    </view>
+                    <connections>
+                        <outlet property="planetDetails" destination="r3k-kt-bae" id="qJc-IL-5Oc"/>
+                        <outlet property="planetImageView" destination="dZ9-og-rb5" id="xUO-Ee-KaT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nwu-Qi-p09" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ue7-XJ-9b9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="110.86956521739131"/>
         </scene>
     </scenes>
 </document>
